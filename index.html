@@ -1,0 +1,3321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Ujian Sertifikasi Digital — PT Teknologi Digital Indonesia</title>
+    <meta name="description" content="Portal resmi untuk ujian sertifikasi digital tingkat Basic dan Technology. Dikelola bersama BNSP untuk standar kompetensi kerja nasional Indonesia.">
+    <meta name="keywords" content="sertifikasi digital, BNSP, ujian online, kompetensi teknologi, sertifikasi profesi">
+    <meta name="author" content="PT Teknologi Digital Indonesia">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Portal Ujian Sertifikasi Digital — PT Teknologi Digital Indonesia">
+    <meta property="og:description" content="Portal resmi ujian sertifikasi digital BNSP. Ikuti ujian Basic & Technology secara online.">
+    <meta property="og:image" content="LOGO_COMPANY.png">
+    <meta property="og:url" content="https://perusahaan.co.id/portal-ujian">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <style>
+        /* ===============================================================================
+        PORTAL UJIAN SERTIFIKASI DIGITAL - PROFESSIONAL THEME
+        =============================================================================== */
+        
+        :root {
+            /* Professional Color Palette */
+            --primary-blue: #1e40af;
+            --primary-dark: #1e3a8a;
+            --primary-light: #3b82f6;
+            --primary-lighter: #dbeafe;
+            
+            --secondary-gold: #f59e0b;
+            --secondary-dark: #d97706;
+            --secondary-light: #fbbf24;
+            --secondary-lighter: #fef3c7;
+            
+            --neutral-900: #111827;
+            --neutral-800: #1f2937;
+            --neutral-700: #374151;
+            --neutral-600: #4b5563;
+            --neutral-500: #6b7280;
+            --neutral-400: #9ca3af;
+            --neutral-300: #d1d5db;
+            --neutral-200: #e5e7eb;
+            --neutral-100: #f3f4f6;
+            --neutral-50: #f9fafb;
+            
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --info: #3b82f6;
+            
+            --white: #ffffff;
+            --background: #fefefe;
+            --card-bg: var(--white);
+            
+            /* Shadows & Effects */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+            --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+            
+            --border-radius-sm: 6px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 20px;
+            --border-radius-2xl: 24px;
+            
+            --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Playfair Display', Georgia, serif;
+        }
+        
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: var(--font-secondary);
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--neutral-800);
+            background: var(--background);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Professional Background Pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(135deg, rgba(30, 64, 175, 0.02) 0%, transparent 50%),
+                linear-gradient(45deg, rgba(245, 158, 11, 0.01) 0%, transparent 50%),
+                var(--background);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--neutral-900);
+            margin-bottom: 1rem;
+        }
+        
+        h1 { font-size: 2.5rem; font-weight: 700; }
+        h2 { font-size: 2rem; font-weight: 600; }
+        h3 { font-size: 1.5rem; font-weight: 600; }
+        h4 { font-size: 1.25rem; font-weight: 600; }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--neutral-600);
+        }
+        
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .professional-card {
+            background: var(--card-bg);
+            border: 1px solid var(--neutral-200);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .professional-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--secondary-gold));
+        }
+        
+        .professional-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--neutral-300);
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            border: none;
+            border-radius: var(--border-radius-md);
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 0.875rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            min-height: 44px;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+            color: var(--white);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary-gold), var(--secondary-light));
+            color: var(--white);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, var(--secondary-dark), var(--secondary-gold));
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            box-shadow: none;
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .btn-ghost {
+            background: transparent;
+            color: var(--neutral-600);
+            border: none;
+            box-shadow: none;
+            font-weight: 400;
+        }
+        
+        .btn-ghost:hover {
+            background: var(--neutral-100);
+            color: var(--neutral-800);
+        }
+        
+        /* =============================================================================
+           IMPROVED HEADER & NAVIGATION
+           ============================================================================= */
+        
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--neutral-200);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+        
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-md);
+            backdrop-filter: blur(25px);
+        }
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+        
+        /* Logo Section - Improved Layout */
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .logo-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--neutral-50), var(--white));
+            border-radius: var(--border-radius-lg);
+            border: 2px solid var(--neutral-200);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+        
+        .logo-container:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-light);
+        }
+        
+        .logo-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--primary-lighter), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .logo-container:hover::before {
+            opacity: 1;
+        }
+        
+        .logo-img {
+            max-width: 100%;
+            max-height: 40px;
+            object-fit: contain;
+            border-radius: var(--border-radius-sm);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo-fallback {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--primary-blue);
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Brand Section - Centered and Responsive */
+        .brand-section {
+            flex: 1;
+            text-align: center;
+            margin: 0 1rem;
+            min-width: 0; /* Allows text to shrink */
+        }
+        
+        .brand-title {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-weight: 700;
+            margin: 0 0 0.25rem 0;
+            background: linear-gradient(135deg, var(--neutral-900), var(--primary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: var(--font-primary);
+            line-height: 1.1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .brand-subtitle {
+            font-size: clamp(0.7rem, 2vw, 0.875rem);
+            color: var(--neutral-500);
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* Navigation - Desktop */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-shrink: 0;
+        }
+        
+        .nav-menu a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: var(--neutral-700);
+            text-decoration: none;
+            transition: var(--transition);
+            padding: 0.75rem 1rem;
+            border-radius: var(--border-radius-md);
+            position: relative;
+            white-space: nowrap;
+        }
+        
+        .nav-menu a i {
+            font-size: 1rem;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .nav-menu a::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--primary-lighter), var(--secondary-lighter));
+            border-radius: var(--border-radius-md);
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-menu a:hover::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+        
+        .nav-menu a:hover i {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .nav-menu a.active {
+            color: var(--primary-blue);
+            background: linear-gradient(135deg, var(--primary-lighter), var(--secondary-lighter));
+            font-weight: 600;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .nav-menu a.active i {
+            opacity: 1;
+            color: var(--primary-blue);
+        }
+        
+        /* Mobile Menu Toggle - Improved */
+        .mobile-menu-toggle {
+            display: none;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+            border: none;
+            font-size: 1.25rem;
+            color: var(--white);
+            cursor: pointer;
+            padding: 0.75rem;
+            border-radius: var(--border-radius-md);
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mobile-menu-toggle::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary-gold));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .mobile-menu-toggle:hover::before {
+            opacity: 1;
+        }
+        
+        .mobile-menu-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mobile-menu-toggle i {
+            position: relative;
+            z-index: 2;
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu-toggle.active i {
+            transform: rotate(180deg);
+        }
+        
+        /* Mobile Menu - Enhanced */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: min(320px, 85vw);
+            height: 100vh;
+            background: linear-gradient(135deg, var(--white) 0%, var(--neutral-50) 100%);
+            border-right: 1px solid var(--neutral-200);
+            box-shadow: var(--shadow-2xl);
+            transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 10001;
+            overflow-y: auto;
+            backdrop-filter: blur(20px);
+        }
+        
+        .mobile-menu.active {
+            left: 0;
+        }
+        
+        .mobile-menu-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--neutral-200);
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+            color: var(--white);
+        }
+        
+        .mobile-menu-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0;
+            font-family: var(--font-primary);
+        }
+        
+        .mobile-menu-close {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            font-size: 1.25rem;
+            color: var(--white);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: var(--border-radius-md);
+            transition: var(--transition);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-menu-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .mobile-nav-menu {
+            padding: 1.5rem 1rem;
+        }
+        
+        .mobile-nav-menu a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.25rem 1rem;
+            color: var(--neutral-700);
+            text-decoration: none;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 0.5rem;
+            transition: var(--transition);
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 1rem;
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mobile-nav-menu a::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--primary-lighter), var(--secondary-lighter));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .mobile-nav-menu a i {
+            font-size: 1.25rem;
+            width: 24px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .mobile-nav-menu a span {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .mobile-nav-menu a:hover::before {
+            opacity: 1;
+        }
+        
+        .mobile-nav-menu a:hover {
+            color: var(--primary-blue);
+            border-color: var(--primary-light);
+            transform: translateX(5px);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .mobile-nav-menu a.active {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+            color: var(--white);
+            border-color: var(--primary-blue);
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mobile-nav-menu a.active::before {
+            opacity: 0;
+        }
+        
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 10000;
+        }
+        
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Responsive Breakpoints */
+        @media (max-width: 1200px) {
+            .nav-menu {
+                gap: 0.25rem;
+            }
+            
+            .nav-menu a {
+                padding: 0.625rem 0.875rem;
+                font-size: 0.8125rem;
+            }
+            
+            .nav-menu a i {
+                font-size: 0.9375rem;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .header-container {
+                padding: 0.75rem 1.5rem;
+            }
+            
+            .logo-container {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .logo-img {
+                max-height: 35px;
+            }
+            
+            .brand-section {
+                margin: 0 0.75rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 0.75rem 1rem;
+                gap: 0.75rem;
+            }
+            
+            .logo-section {
+                gap: 0.75rem;
+            }
+            
+            .logo-container {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .logo-img {
+                max-height: 30px;
+            }
+            
+            .brand-section {
+                margin: 0 0.5rem;
+            }
+            
+            .brand-title {
+                font-size: clamp(1rem, 4vw, 1.25rem);
+            }
+            
+            .brand-subtitle {
+                font-size: clamp(0.65rem, 2.5vw, 0.75rem);
+            }
+            
+            .mobile-menu {
+                width: min(300px, 90vw);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-container {
+                padding: 0.5rem 0.75rem;
+                gap: 0.5rem;
+            }
+            
+            .logo-section {
+                gap: 0.5rem;
+            }
+            
+            .logo-container {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .logo-img {
+                max-height: 25px;
+            }
+            
+            .brand-section {
+                margin: 0 0.25rem;
+            }
+            
+            .mobile-menu {
+                width: 95vw;
+            }
+            
+            .mobile-menu-toggle {
+                padding: 0.625rem;
+                font-size: 1.125rem;
+            }
+        }
+        
+        /* Main Layout */
+        .main-content {
+            padding: 3rem 0;
+            min-height: calc(100vh - 200px);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--primary-lighter) 0%, var(--secondary-lighter) 100%);
+            border-radius: var(--border-radius-2xl);
+            margin-top: 2rem;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="30" cy="30" r="20"/></g></svg>');
+            background-size: 60px 60px;
+            opacity: 0.5;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--neutral-900), var(--primary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: var(--font-display);
+        }
+        
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--neutral-600);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-family: var(--font-primary);
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--neutral-500);
+            margin-top: 0.25rem;
+        }
+        
+        /* Exam Cards */
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+        
+        .exam-card {
+            padding: 2.5rem;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--white), var(--neutral-50));
+        }
+        
+        .exam-card-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 2rem;
+            background: linear-gradient(135deg, var(--primary-lighter), var(--secondary-lighter));
+            border: 3px solid var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .exam-card-icon::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid var(--primary-light);
+            border-radius: 50%;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: var(--transition);
+        }  
+        .exam-card:hover .exam-card-icon {
+            transform: scale(1.05);
+            border-color: var(--secondary-gold);
+            background: linear-gradient(135deg, var(--secondary-lighter), var(--primary-lighter));
+        }
+        
+        .exam-card:hover .exam-card-icon::after {
+            opacity: 1;
+            transform: scale(1);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.05); opacity: 0.3; }
+            100% { transform: scale(1.1); opacity: 0; }
+        }
+        
+        .exam-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--neutral-900);
+            font-family: var(--font-primary);
+        }
+        
+        .exam-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .exam-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--neutral-600);
+            font-weight: 500;
+        }
+        
+        .exam-meta-item i {
+            color: var(--primary-blue);
+        }
+        
+        .exam-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        /* Side Panel */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .side-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .info-card {
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .info-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--neutral-900);
+            font-family: var(--font-primary);
+        }
+        
+        .info-card h3 i {
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+        }
+        
+        .instruction-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .instruction-list li {
+            padding: 1rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--neutral-600);
+            border-bottom: 1px solid var(--neutral-100);
+            transition: var(--transition);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .instruction-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .instruction-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            font-size: 1rem;
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        .instruction-list li:hover {
+            color: var(--neutral-800);
+            padding-left: 2.5rem;
+        }
+        
+        /* FAQ Section */
+        .faq-item {
+            margin: 1rem 0;
+            border: 1px solid var(--neutral-200);
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .faq-item:hover {
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 1.25rem;
+            background: var(--neutral-50);
+            border: none;
+            color: var(--neutral-800);
+            font-family: var(--font-primary);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            font-size: 0.9rem;
+        }
+        
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .faq-question[aria-expanded="true"]::after {
+            content: "−";
+            transform: translateY(-50%);
+        }
+        
+        .faq-question:hover {
+            background: var(--primary-lighter);
+            color: var(--primary-blue);
+        }
+        
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: var(--white);
+        }
+        
+        .faq-answer.open {
+            padding: 1.25rem;
+            max-height: 200px;
+        }
+        
+        .faq-answer p {
+            margin: 0;
+            color: var(--neutral-600);
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(17, 24, 39, 0.75);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-2xl);
+            max-width: 95vw;
+            max-height: 90vh;
+            overflow: hidden;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            position: relative;
+            border: 1px solid var(--neutral-200);
+        }
+        
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+            color: var(--white);
+            position: relative;
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+            font-family: var(--font-primary);
+        }
+        
+        .modal-close {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+            padding: 0.75rem;
+            border-radius: 50%;
+            transition: var(--transition);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .modal-body {
+            padding: 0;
+            position: relative;
+        }
+        
+        /* Form Iframe */
+        .form-iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            background: var(--white);
+            border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+        }
+        
+        /* Loading Spinner */
+        .loading-spinner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem;
+            color: var(--neutral-600);
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--neutral-200);
+            border-top: 3px solid var(--primary-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1.5rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--neutral-700);
+        }
+        
+        .loading-subtext {
+            font-size: 0.9rem;
+            color: var(--neutral-500);
+            margin-top: 0.5rem;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, var(--neutral-900), var(--neutral-800));
+            color: var(--white);
+            padding: 4rem 0;
+            margin-top: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23ffffff" fill-opacity="0.03"><circle cx="50" cy="50" r="30"/></g></svg>');
+            background-size: 100px 100px;
+        }
+        
+        .contact-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--primary-light);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+        
+        .contact-card h4 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-family: var(--font-primary);
+        }
+        
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card a {
+            color: var(--secondary-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .contact-card a:hover {
+            color: var(--secondary-gold);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--neutral-900);
+            color: var(--neutral-300);
+            padding: 3rem 0 2rem;
+            border-top: 1px solid var(--neutral-800);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-family: var(--font-primary);
+        }
+        
+        .footer-section p, .footer-section a {
+            color: var(--neutral-400);
+            text-decoration: none;
+            transition: var(--transition);
+            line-height: 1.6;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-light);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid var(--neutral-800);
+            padding-top: 2rem;
+            text-align: center;
+            color: var(--neutral-500);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--neutral-800);
+            border: 1px solid var(--neutral-700);
+            border-radius: 50%;
+            color: var(--neutral-400);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: var(--primary-blue);
+            border-color: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--white);
+            color: var(--neutral-800);
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-lg);
+            border-left: 4px solid var(--info);
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            z-index: 10001;
+            max-width: 350px;
+            font-family: var(--font-primary);
+            font-weight: 500;
+        }
+        
+        .toast.show {
+            transform: translateX(0);
+        }
+        
+        .toast.success {
+            border-left-color: var(--success);
+        }
+        
+        .toast.error {
+            border-left-color: var(--error);
+        }
+        
+        .toast.warning {
+            border-left-color: var(--warning);
+        }
+        
+        /* Certificate Section */
+        .certificate-section {
+            background: linear-gradient(135deg, var(--primary-lighter), var(--secondary-lighter));
+            border-radius: var(--border-radius-2xl);
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .certificate-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.05) 10px,
+                rgba(255, 255, 255, 0.05) 20px
+            );
+            animation: move 20s linear infinite;
+        }
+        
+        @keyframes move {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        .certificate-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .certificate-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-gold));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+        
+        .feature-text {
+            font-weight: 500;
+            color: var(--neutral-700);
+            text-align: center;
+        }
+        
+        /* Statistics Section */
+        .stats-section {
+            padding: 3rem 0;
+            background: var(--white);
+            border-top: 1px solid var(--neutral-200);
+            border-bottom: 1px solid var(--neutral-200);
+            margin: 3rem 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat-card {
+            padding: 2rem 1rem;
+        }
+        
+        .stat-card .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            font-family: var(--font-primary);
+            line-height: 1;
+        }
+        
+        .stat-card .stat-label {
+            font-size: 1rem;
+            color: var(--neutral-600);
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .stat-card .stat-description {
+            font-size: 0.85rem;
+            color: var(--neutral-500);
+            margin-top: 0.25rem;
+        }
+        
+        /* Admin Panel */
+        .admin-panel {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            z-index: 1001;
+        }
+        
+        .admin-toggle {
+            background: linear-gradient(135deg, var(--neutral-800), var(--neutral-700));
+            color: var(--white);
+            border: 1px solid var(--neutral-600);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius-xl);
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            font-family: var(--font-primary);
+            font-weight: 500;
+        }
+        
+        .admin-toggle:hover {
+            background: linear-gradient(135deg, var(--neutral-700), var(--neutral-600));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .admin-dropdown {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            background: var(--white);
+            border: 1px solid var(--neutral-200);
+            border-radius: var(--border-radius-md);
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            min-width: 250px;
+            display: none;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .admin-dropdown.active {
+            display: block;
+        }
+        
+        .admin-dropdown h4 {
+            color: var(--neutral-800);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--neutral-200);
+            padding-bottom: 0.5rem;
+        }
+        
+        .admin-dropdown .btn {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.625rem 1rem;
+            font-size: 0.8rem;
+            justify-content: flex-start;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .layout-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .side-panel {
+                order: -1;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .hero-stats {
+                gap: 2rem;
+            }
+            
+            .exam-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .header-container {
+                padding: 1rem;
+            }
+            
+            .logo-container {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .logo-img {
+                max-width: 45px;
+                max-height: 45px;
+            }
+            
+            .brand-title {
+                font-size: 1.4rem;
+            }
+            
+            .brand-subtitle {
+                font-size: 0.75rem;
+            }
+            
+            .hero-title {
+                font-size: 2.25rem;
+            }
+            
+            .hero-description {
+                font-size: 1rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: center;
+            }
+            
+            .exam-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .exam-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .exam-actions {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+            
+            .modal-content {
+                max-width: 95vw;
+                max-height: 95vh;
+            }
+            
+            .form-iframe {
+                height: 500px;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .certificate-features {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 2rem 1rem;
+                margin-top: 1rem;
+            }
+            
+            .hero-title {
+                font-size: 1.875rem;
+            }
+            
+            .exam-card {
+                padding: 1.5rem 1rem;
+            }
+            
+            .modal-header {
+                padding: 1.5rem;
+            }
+            
+            .modal-title {
+                font-size: 1.25rem;
+            }
+            
+            .form-iframe {
+                height: 450px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-section {
+                padding: 2rem 0;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .header, .footer, .admin-panel, .mobile-menu, .mobile-overlay {
+                display: none;
+            }
+            
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .professional-card {
+                background: white;
+                border: 1px solid #ccc;
+                box-shadow: none;
+            }
+        }
+        
+        /* High Contrast Mode Support */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-blue: #0000ff;
+                --neutral-800: #000000;
+                --neutral-200: #666666;
+            }
+        }
+        
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header" role="banner">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img src="bnsp.png" alt="BNSP Logo" class="logo-img" 
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="logo-fallback" style="display: none;">BNSP</div>
+                </div>
+                
+                <div class="logo-container">
+                    <img src="skkni.png" alt="SKKNI Logo" class="logo-img" 
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="logo-fallback" style="display: none;">SKKNI</div>
+                </div>
+            </div>
+            
+            <!-- Brand Section -->
+            <div class="brand-section">
+                <h1 class="brand-title">UJK BNSP TATA KECANTIKAN</h1>
+                <p class="brand-subtitle">Badan Nasional Sertifikasi Profesi Tata Kecantikan</p>
+            </div>
+            
+            <!-- Company Logo -->
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img src="logobg.jpg" alt="Company Logo" class="logo-img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="logo-fallback" style="display: none;">TDI</div>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" role="navigation">
+                <a href="#home" class="active">
+                    <i class="fas fa-home"></i> Beranda
+                </a>
+                <a href="#exams">
+                    <i class="fas fa-clipboard-list"></i> Ujian
+                </a>
+                <a href="#contact">
+                    <i class="fas fa-phone"></i> Kontak
+                </a>
+                <a href="#about">
+                    <i class="fas fa-info-circle"></i> Tentang
+                </a>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-menu" role="navigation">
+        <div class="mobile-menu-header">
+            <h3 style="color: var(--primary-blue); font-family: var(--font-primary); margin: 0;">Menu</h3>
+            <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close mobile menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-menu">
+            <a href="#home" onclick="closeMobileMenu()">
+                <i class="fas fa-home"></i> Beranda
+            </a>
+            <a href="#exams" onclick="closeMobileMenu()">
+                <i class="fas fa-clipboard-list"></i> Ujian Kompetensi
+            </a>
+            <a href="#contact" onclick="closeMobileMenu()">
+                <i class="fas fa-phone"></i> Hubungi Kami
+            </a>
+            <a href="#about" onclick="closeMobileMenu()">
+                <i class="fas fa-info-circle"></i> Tentang UJK
+            </a>
+            <a href="#faq" onclick="closeMobileMenu()">
+                <i class="fas fa-question-circle"></i> FAQ
+            </a>
+            <a href="#certificate" onclick="closeMobileMenu()">
+                <i class="fas fa-certificate"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content" role="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Ujian Kompetensi BNSP dalam bidang kecantikan</h1>
+                    <p class="hero-description">
+                        Ujian ini disusun oleh Komunitas pengusaha kecantikan Indonesia sebagai bagian dari evaluasi kompetensi Asesi dalam bidang Kecantikan Level Basic hingga Level teknologi.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Peserta UJK BNSP</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">87%</div>
+                            <div class="stat-label">Tingkat Kelulusan</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support Available</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Layout Grid -->
+            <div class="layout-grid">
+                <!-- Main Content Area -->
+                <div class="content-area">
+                    <!-- Exam Section -->
+                    <section id="exams" class="exam-section">
+                        <div class="exam-grid">
+                            <!-- Basic Level Card -->
+                            <article class="exam-card professional-card" role="article">
+                                <div class="exam-card-icon">
+                                    <i class="fas fa-spa" aria-hidden="true"></i>
+                                </div>
+                                <h3>Level Basic</h3>
+                                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">
+                                    Ujian dasar untuk kompetensi BNSP bidang kecantikan
+                                </p>
+                                <div class="exam-meta">
+                                    <div class="exam-meta-item">
+                                        <i class="fas fa-clipboard-list"></i>
+                                        <span>100 Soal</span>
+                                    </div>
+                                    <div class="exam-meta-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>120 Menit</span>
+                                    </div>
+                                    <div class="exam-meta-item">
+                                        <i class="fas fa-percentage"></i>
+                                        <span>Passing: 70</span>
+                                    </div>
+                                </div>
+                                <div class="exam-actions">
+                                    <button class="btn btn-primary" onclick="startExam('basic')" 
+                                            aria-label="Mulai ujian Level Basic">
+                                        <i class="fas fa-play"></i>
+                                        Mulai Ujian
+                                    </button>
+                                    <button class="btn btn-outline" onclick="showExamInfo('basic')"
+                                            aria-label="Informasi ujian Level Basic">
+                                        <i class="fas fa-info"></i>
+                                        Info Detail
+                                    </button>
+                                </div>
+                            </article>
+                            
+                            <!-- Technology Level Card -->
+                            <article class="exam-card professional-card" role="article">
+                                <div class="exam-card-icon">
+                                    <i class="fas fa-magic" aria-hidden="true"></i>
+                                </div>
+                                <h3>Level Technology</h3>
+                                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">
+                                    Ujian lanjutan untuk teknologi modern dalam Bidang kecantikan
+                                </p>
+                                <div class="exam-meta">
+                                    <div class="exam-meta-item">
+                                        <i class="fas fa-clipboard-list"></i>
+                                        <span>50 Soal</span>
+                                    </div>
+                                    <div class="exam-meta-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>60 Menit</span>
+                                    </div>
+                                    <div class="exam-meta-item">
+                                        <i class="fas fa-percentage"></i>
+                                        <span>Passing: 75</span>
+                                    </div>
+                                </div>
+                                <div class="exam-actions">
+                                    <button class="btn btn-secondary" onclick="startExam('technology')"
+                                            aria-label="Mulai ujian Level Technology">
+                                        <i class="fas fa-rocket"></i>
+                                        Mulai Ujian
+                                    </button>
+                                    <button class="btn btn-outline" onclick="showExamInfo('technology')"
+                                            aria-label="Informasi ujian Level Technology">
+                                        <i class="fas fa-info"></i>
+                                        Info Detail
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    
+                    <!-- Certificate Section -->
+                    <section id="certificate" class="certificate-section">
+                        <div class="certificate-content">
+                            <h2 style="color: var(--neutral-800); margin-bottom: 1rem; font-family: var(--font-display);">
+                                UJIAN KOMPTENSI TATA KECANTIKAN
+                            </h2>
+                            <p style="color: var(--neutral-600); margin-bottom: 2rem; font-size: 1.1rem;">
+                                Mulailah Ujian Kompetensi Dengan Sungguh - Sungguh Agar meningkatkan karir profesional Anda
+                            </p>
+                            
+                            <div class="certificate-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <div class="feature-text"> BNSP & SKKI</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="feature-text">Verifikasi Digital</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="feature-text">Komunitas Pengusaha Missbeauty</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="feature-text">Apresiasi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Statistics Section -->
+                    <section class="stats-section">
+                        <div class="container">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Support</div>
+                                    <div class="stat-description">Bantuan Teknis</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Side Panel -->
+                <aside class="side-panel" role="complementary">
+                    <!-- Instructions Card -->
+                    <div class="info-card professional-card">
+                        <h3>
+                            <i class="fas fa-compass"></i>
+                            Petunjuk Ujian
+                        </h3>
+                        <ul class="instruction-list">
+                            <li>Pastikan koneksi internet stabil dan bandwidth memadai</li>
+                            <li>Gunakan browser terbaru (Chrome, Firefox, Safari, Edge)</li>
+                            <li>Siapkan lingkungan yang tenang dan bebas gangguan</li>
+                            <li>Pastikan perangkat memiliki daya battery cukup</li>
+                            <li>Jangan refresh atau tutup browser selama ujian</li>
+                            <li>Baca setiap soal dengan teliti sebelum menjawab</li>
+                            <li>Manfaatkan waktu yang tersedia dengan baik</li>
+                            <li>Pastikan semua jawaban tersimpan sebelum submit</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- System Requirements -->
+                    <div class="info-card professional-card">
+                        <h3>
+                            <i class="fas fa-desktop"></i>
+                            Kebutuhan Sistem
+                        </h3>
+                        <div style="color: var(--neutral-600); font-size: 0.9rem; line-height: 1.6;">
+                            <p><strong>Browser:</strong> Chrome 90+, Firefox 88+, Safari 14+, Edge 90+</p>
+                            <p><strong>Koneksi:</strong> Minimum 2 Mbps, Stabil</p>
+                            <p><strong>Layar:</strong> Minimum 1024x768 px</p>
+                            <p><strong>RAM:</strong> Minimum 4GB</p>
+                            <p><strong>Storage:</strong> 100MB ruang kosong</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Section -->
+                    <div class="info-card professional-card">
+                        <h3>
+                            <i class="fas fa-question-circle"></i>
+                            Frequently Asked Questions
+                        </h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)" 
+                                        aria-expanded="false" aria-controls="faq-1">
+                                    Apakah bisa mengulang ujian jika tidak lulus?
+                                </button>
+                                <div class="faq-answer" id="faq-1">
+                                    <p>Ya, Anda dapat mengulang ujian (Remidi) dari ujian sebelumnya.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)"
+                                        aria-expanded="false" aria-controls="faq-2">
+                                    Bagaimana jika koneksi internet terputus saat ujian?
+                                </button>
+                                <div class="faq-answer" id="faq-2">
+                                    <p>Sistem akan otomatis menyimpan progress jawaban setiap 30 detik. Jika terputus, Anda dapat melanjutkan dari soal terakhir yang dijawab dalam waktu 15 menit.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)"
+                                        aria-expanded="false" aria-controls="faq-3">
+                                    Kapan hasil ujian akan diumumkan?
+                                </button>
+                                <div class="faq-answer" id="faq-3">
+                                    <p>Hasil ujian akan langsung terlihat. Anda dapat melihat score ujian langsung setelah mengerjakan.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)"
+                                        aria-expanded="false" aria-controls="faq-4">
+                                    Berapa passing grade untuk setiap level?
+                                </button>
+                                <div class="faq-answer" id="faq-4">
+                                    <p>Level Basic memerlukan skor minimum 70%, sedangkan Level Technology memerlukan skor minimum 75% untuk dinyatakan lulus.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)"
+                                        aria-expanded="false" aria-controls="faq-5">
+                                    Identitas apa saja yang diperlukan untuk ujian?
+                                </button>
+                                <div class="faq-answer" id="faq-5">
+                                    <p>Nama Lengkap , Email , Nomor Telepon Aktif.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timer Display -->
+                    <div class="info-card professional-card">
+                        <h3>
+                            <i class="fas fa-hourglass-half"></i>
+                            Waktu Ujian
+                        </h3>
+                        <div style="text-align: center; padding: 1.5rem; background: linear-gradient(135deg, var(--primary-lighter), var(--secondary-lighter)); border-radius: var(--border-radius-md); margin: 1rem 0;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue); font-family: var(--font-primary);" id="sampleTimer">120:00</div>
+                            <p style="color: var(--neutral-600); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Menit untuk Level Basic</p>
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--neutral-600); text-align: center;">
+                            <p style="margin: 0.5rem 0;"><i class="fas fa-clock" style="color: var(--primary-blue);"></i> Level Technology: 90 menit</p>
+                            <p style="margin: 0.5rem 0;"><i class="fas fa-save" style="color: var(--success);"></i> Auto-save setiap 30 detik</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 style="color: var(--white); font-family: var(--font-display); margin-bottom: 1rem;">
+                    Hubungi Kami
+                </h2>
+                <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 3rem; font-size: 1.1rem;">
+                    Jika Ada Kendala Saat Ujian Atau Pertanyaan, silahkan Hubungin Nomor WhatsApp Yang Sudah Di cantumkan
+                </p>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Support</h4>
+                        <p>Kirim pertanyaan atau kendala teknis</p>
+                        <a href="mailto:desiputrisu@gmail.com">desiputrisu@gmail.com</a>
+                        <div style="margin-top: 1rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.6);">
+                            24 JAM
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <p>Chat langsung untuk bantuan cepat</p>
+                        <a href="https://wa.me/6282128528895" target="_blank">+62 821-2852-8895</a>
+                        <div style="margin-top: 1rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.6);">
+                            24 JAM
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Technical Support</h4>
+                        <p>Bantuan teknis dan troubleshooting</p>
+                        <a href="mailto:support@desiemissbeauty.com">Technical Team</a>
+                        <div style="margin-top: 1rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.6);">
+                            Mon-Fri: 24 JAM
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Office Location</h4>
+                        <p>Kunjungi kantor untuk konsultasi</p>
+                        <a href="#" onclick="showOfficeInfo()">Lihat Alamat</a>
+                        <div style="margin-top: 1rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.6);">
+                            By appointment only
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal System -->
+    <div id="examModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Loading...</h2>
+                <button class="modal-close" onclick="closeModal()" aria-label="Tutup modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <div class="loading-text">Memuat sistem ujian...</div>
+                    <div class="loading-subtext">Pastikan koneksi internet stabil</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Tentang UJK</h4>
+                    <p> Ujian Kompetensi digital berstandar BNSP untuk bidang kecantikan. Meningkatkan kompetensi profesional & Efektif.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <p><a href="#exams">Ujian Kompetensi level Basic</a></p>
+                    <p><a href="#exams">Ujian Kompetensi Level Technology</a></p>
+                    <p><a href="#certificate">Program Pelatihan</a></p>
+                    <p><a href="#" onclick="showPolicy('training')">Konsultasi</a></p>
+                    <p><a href="#contact"></a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kebijakan</h4>
+                    <p><a href="#" onclick="showPolicy('privacy')">Kebijakan Privasi</a></p>
+                    <p><a href="#" onclick="showPolicy('terms')">Syarat & Ketentuan</a></p>
+                    <p><a href="#" onclick="showPolicy('exam')">Aturan Ujian</a></p>
+                    <p><a href="#" onclick="showPolicy('refund')">Kebijakan Refund</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Partner</h4>
+                    <p>Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                    <p>Standar Kompetensi Kerja Nasional Indonesia (SKKNI)</p>
+                    <p>DibeautyPreneur Academy</p>
+                    <p>Komunitas Pengusaha Kecantikan Indonesia</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DesieMissBeauty - Ujian Kompetensi BNSP. All rights reserved.</p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <script>
+        // ============= CONFIGURATION VARIABLES =============
+        const CONFIG = {
+            // UPDATE THESE URLs WITH YOUR ACTUAL GOOGLE FORMS URLs (REMOVE ?embedded=true)
+            FORM_BASIC_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSc_NjxbGVp1PXDYkk_sHrQhq_Nle3idp7E5nlItvc76XDrgsw/viewform?usp=header',
+            FORM_TECH_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSfe41KwHr555paLwlBeF_Vn-fvDt8h9m83DyNCFAjubHen6Hw/viewform?usp=header',
+            
+            // Contact Information
+            ADMIN_EMAIL: 'desiputrisu@gmail.com',
+            SUPPORT_WHATSAPP: '+6282128528895',
+            COMPANY_NAME: 'DesieMissBeauty',
+            COMPANY_WEBSITE: 'https://desiemissbeauty.com',
+            
+            // Exam Settings
+            BASIC_DURATION: 120, // minutes
+            TECH_DURATION: 90,   // minutes
+            BASIC_QUESTIONS: 100,
+            TECH_QUESTIONS: 75,
+            BASIC_PASSING: 70,   // percentage
+            TECH_PASSING: 75,    // percentage
+            
+            // System Settings
+            AUTOSAVE_INTERVAL: 30000, // 30 seconds
+            CONNECTION_TIMEOUT: 15000, // 15 seconds
+        };
+        
+        // ============= APPLICATION STATE =============
+        let isAdminPanelOpen = false;
+        let currentModal = null;
+        
+        // ============= UTILITY FUNCTIONS =============
+        function showToast(message, type = 'info', duration = 3000) {
+            const toastContainer = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            
+            // Create toast content
+            const icon = type === 'success' ? 'check-circle' : 
+                        type === 'error' ? 'exclamation-triangle' : 
+                        type === 'warning' ? 'exclamation-circle' : 'info-circle';
+            
+            toast.innerHTML = `
+                <i class="fas fa-${icon}" style="margin-right: 0.5rem; color: var(--${type === 'info' ? 'primary-blue' : type});"></i>
+                ${message}
+            `;
+            
+            toastContainer.appendChild(toast);
+            
+            // Show toast
+            setTimeout(() => toast.classList.add('show'), 100);
+            
+            // Hide and remove toast
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => {
+                    if (toastContainer.contains(toast)) {
+                        toastContainer.removeChild(toast);
+                    }
+                }, 300);
+            }, duration);
+        }
+        
+        function validateFormUrl(url) {
+            return url && 
+                    url.includes('docs.google.com/forms') && 
+                    !url.includes('YOUR_') && 
+                    url.length > 50;
+        }
+        
+        // ============= EXAM FUNCTIONS =============
+        function startExam(level) {
+            const formUrl = level === 'basic' ? CONFIG.FORM_BASIC_URL : CONFIG.FORM_TECH_URL;
+            
+            if (!validateFormUrl(formUrl)) {
+                showToast('Form belum dikonfigurasi. Hubungi administrator untuk mengatur URL form yang benar.', 'error', 5000);
+                return;
+            }
+            
+            const levelText = level === 'basic' ? 'Basic' : 'Technology';
+            
+            // Track exam start
+            trackExamStart(level);
+            
+            // Show toast and redirect immediately
+            showToast(`Mengarahkan ke ujian ${levelText}...`, 'info', 2000);
+            
+            // Direct redirect to Google Forms
+            setTimeout(() => {
+                window.location.href = formUrl;
+            }, 500);
+        }
+        
+        function showExamInfo(level) {
+            const modal = document.getElementById('examModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            
+            const levelText = level === 'basic' ? 'Basic' : 'Technology';
+            const duration = level === 'basic' ? CONFIG.BASIC_DURATION : CONFIG.TECH_DURATION;
+            const questions = level === 'basic' ? CONFIG.BASIC_QUESTIONS : CONFIG.TECH_QUESTIONS;
+            const passing = level === 'basic' ? CONFIG.BASIC_PASSING : CONFIG.TECH_PASSING;
+            
+            modalTitle.innerHTML = `
+                <i class="fas fa-info-circle"></i>
+                Informasi Ujian Level ${levelText}
+            `;
+            
+            const examTopics = level === 'basic' ? [
+                'Dasar-dasar Kecantikan dan Perawatan Kulit',
+                'Produk Kosmetik dan Fungsinya',
+                'Teknik Makeup Dasar',
+                'Hygiene dan Sanitasi dalam Beauty',
+                'Customer Service dan Konsultasi',
+                'Keselamatan Kerja di Salon/Klinik'
+            ] : [
+                'Teknologi Modern dalam Beauty Treatment',
+                'Peralatan Elektronik untuk Kecantikan',
+                'Digital Marketing untuk Beauty Business',
+                'Sistem Manajemen Salon/Klinik',
+                'Inovasi Produk dan Teknologi Terbaru',
+                'Analisis Data Customer dan Trend'
+            ];
+            
+            modalBody.innerHTML = `
+                <div style="padding: 2rem; max-height: 70vh; overflow-y: auto;">
+                    <div class="professional-card" style="margin-bottom: 2rem; padding: 1.5rem;">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-chart-line"></i>
+                            Spesifikasi Ujian
+                        </h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <div style="text-align: center; padding: 1rem; background: var(--primary-lighter); border-radius: var(--border-radius-md);">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue);">${questions}</div>
+                                <div style="color: var(--neutral-600); font-size: 0.9rem;">Total Soal</div>
+                            </div>
+                            <div style="text-align: center; padding: 1rem; background: var(--secondary-lighter); border-radius: var(--border-radius-md);">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--secondary-gold);">${duration}</div>
+                                <div style="color: var(--neutral-600); font-size: 0.9rem;">Menit</div>
+                            </div>
+                            <div style="text-align: center; padding: 1rem; background: var(--neutral-100); border-radius: var(--border-radius-md);">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--success);">${passing}%</div>
+                                <div style="color: var(--neutral-600); font-size: 0.9rem;">Passing Grade</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="professional-card" style="margin-bottom: 2rem; padding: 1.5rem;">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-book"></i>
+                            Materi Ujian
+                        </h3>
+                        <div style="display: grid; gap: 0.75rem;">
+                            ${examTopics.map((topic, index) => `
+                                <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; background: var(--neutral-50); border-radius: var(--border-radius-sm);">
+                                    <div style="width: 30px; height: 30px; background: var(--primary-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.9rem;">
+                                        ${index + 1}
+                                    </div>
+                                    <div style="color: var(--neutral-700); font-weight: 500;">${topic}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="professional-card" style="padding: 1.5rem;">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Peraturan Penting
+                        </h3>
+                        <ul style="color: var(--neutral-600); line-height: 1.6; padding-left: 1.5rem;">
+                            <li>Ujian hanya dapat dilakukan sekali dalam satu hari</li>
+                            <li>Tidak diperkenankan menggunakan bantuan orang lain</li>
+                            <li>Dilarang membuka browser/aplikasi lain selama ujian</li>
+                            <li>Waktu ujian akan berjalan otomatis setelah mulai</li>
+                            <li>Sistem akan otomatis submit jika waktu habis</li>
+                            <li>Hasil ujian tidak dapat diganggu gugat setelah submit</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button class="btn btn-primary" onclick="closeModal(); setTimeout(() => startExam('${level}'), 300);">
+                            <i class="fas fa-play"></i> Mulai Ujian Sekarang
+                        </button>
+                        <button class="btn btn-outline" onclick="closeModal()" style="margin-left: 1rem;">
+                            <i class="fas fa-times"></i> Tutup
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.add('active');
+            currentModal = 'info-' + level;
+        }
+        
+        // ============= UI FUNCTIONS =============
+        function closeModal() {
+            const modal = document.getElementById('examModal');
+            modal.classList.remove('active');
+            currentModal = null;
+        }
+        
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const isOpen = answer.classList.contains('open');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer.open').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('open');
+                    item.previousElementSibling.setAttribute('aria-expanded', 'false');
+                }
+            });
+            
+            // Toggle current FAQ
+            if (!isOpen) {
+                answer.classList.add('open');
+                button.setAttribute('aria-expanded', 'true');
+            } else {
+                answer.classList.remove('open');
+                button.setAttribute('aria-expanded', 'false');
+            }
+        }
+        
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileOverlay = document.querySelector('.mobile-overlay');
+            
+            mobileMenu.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileOverlay = document.querySelector('.mobile-overlay');
+            
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // ============= NAVIGATION FUNCTIONS =============
+        function smoothScrollTo(targetId) {
+            const target = document.querySelector(targetId);
+            if (target) {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = target.offsetTop - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        function updateActiveNavLink() {
+            const sections = ['#home', '#exams', '#certificate', '#contact'];
+            const navLinks = document.querySelectorAll('.nav-menu a, .mobile-nav-menu a');
+            
+            let current = '#home';
+            for (const section of sections) {
+                const element = document.querySelector(section);
+                if (element && window.scrollY >= element.offsetTop - 200) {
+                    current = section;
+                }
+            }
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // ============= ADMIN FUNCTIONS =============
+        function toggleAdminPanel() {
+            const adminDropdown = document.getElementById('adminDropdown');
+            isAdminPanelOpen = !isAdminPanelOpen;
+            adminDropdown.classList.toggle('active', isAdminPanelOpen);
+        }
+        
+        function copyFormLinks() {
+            const formLinks = `
+GOOGLE FORMS CONFIGURATION - PORTAL SERTIFIKASI DIGITAL
+=======================================================
+
+Basic Level Form URL:
+${CONFIG.FORM_BASIC_URL}
+
+Technology Level Form URL:
+${CONFIG.FORM_TECH_URL}
+
+INSTRUCTIONS FOR SETUP:
+1. Replace "YOUR_BASIC_FORM_ID" and "YOUR_TECH_FORM_ID" with actual Google Form IDs
+2. Use the direct viewform URL (NOT the embedded version)
+3. Make sure forms are set to "Anyone with the link can respond"
+4. Test both URLs before going live
+5. Forms will open in the same tab/window when users start exam
+
+EXAMPLE CORRECT URL FORMAT:
+https://docs.google.com/forms/d/e/1FAIpQLSe_EXAMPLE_ID_HERE/viewform
+
+Contact Info:
+- Admin Email: ${CONFIG.ADMIN_EMAIL}
+- Support WhatsApp: ${CONFIG.SUPPORT_WHATSAPP}
+- Company: ${CONFIG.COMPANY_NAME}
+
+Generated: ${new Date().toLocaleString('id-ID')}
+Website: ${CONFIG.COMPANY_WEBSITE}
+            `.trim();
+            
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(formLinks).then(() => {
+                    showToast('Konfigurasi form berhasil disalin ke clipboard!', 'success');
+                }).catch(() => {
+                    fallbackCopyText(formLinks);
+                });
+            } else {
+                fallbackCopyText(formLinks);
+            }
+        }
+        
+        function fallbackCopyText(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            textArea.style.top = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showToast('Konfigurasi form berhasil disalin!', 'success');
+            } catch (err) {
+                showToast('Gagal menyalin. Silakan copy manual dari console.', 'error');
+                console.log('Form Configuration:', text);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+        
+        function testFormConnections() {
+            showToast('Melakukan test koneksi...', 'info');
+            
+            const testResults = {
+                basic: validateFormUrl(CONFIG.FORM_BASIC_URL),
+                tech: validateFormUrl(CONFIG.FORM_TECH_URL)
+            };
+            
+            setTimeout(() => {
+                const basicStatus = testResults.basic ? 'Valid' : 'Invalid/Not configured';
+                const techStatus = testResults.tech ? 'Valid' : 'Invalid/Not configured';
+                
+                const modal = document.getElementById('examModal');
+                const modalTitle = document.getElementById('modalTitle');
+                const modalBody = document.getElementById('modalBody');
+                
+                modalTitle.innerHTML = `
+                    <i class="fas fa-network-wired"></i>
+                    Test Koneksi Form
+                `;
+                
+                modalBody.innerHTML = `
+                    <div style="padding: 2rem;">
+                        <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                            <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Status Koneksi Form</h3>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: ${testResults.basic ? 'var(--success)' : 'var(--error)'}20; border-radius: var(--border-radius-md); border-left: 4px solid ${testResults.basic ? 'var(--success)' : 'var(--error)'};">
+                                    <i class="fas fa-${testResults.basic ? 'check-circle' : 'times-circle'}" style="color: ${testResults.basic ? 'var(--success)' : 'var(--error)'};"></i>
+                                    <div>
+                                        <div style="font-weight: 600; color: var(--neutral-800);">Basic Level Form</div>
+                                        <div style="font-size: 0.9rem; color: var(--neutral-600);">Status: ${basicStatus}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: ${testResults.tech ? 'var(--success)' : 'var(--error)'}20; border-radius: var(--border-radius-md); border-left: 4px solid ${testResults.tech ? 'var(--success)' : 'var(--error)'};">
+                                    <i class="fas fa-${testResults.tech ? 'check-circle' : 'times-circle'}" style="color: ${testResults.tech ? 'var(--success)' : 'var(--error)'};"></i>
+                                    <div>
+                                        <div style="font-weight: 600; color: var(--neutral-800);">Technology Level Form</div>
+                                        <div style="font-size: 0.9rem; color: var(--neutral-600);">Status: ${techStatus}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            ${(!testResults.basic || !testResults.tech) ? `
+                                <div style="padding: 1rem; background: var(--warning)20; border-radius: var(--border-radius-md); border-left: 4px solid var(--warning);">
+                                    <h4 style="color: var(--warning); margin-bottom: 0.5rem;">
+                                        <i class="fas fa-exclamation-triangle"></i> Perlu Konfigurasi
+                                    </h4>
+                                    <p style="margin: 0; font-size: 0.9rem; color: var(--neutral-700);">
+                                        Beberapa form belum dikonfigurasi. Gunakan tombol "Copy Form Links" untuk mendapatkan template konfigurasi.
+                                    </p>
+                                </div>
+                            ` : `
+                                <div style="padding: 1rem; background: var(--success)20; border-radius: var(--border-radius-md); border-left: 4px solid var(--success);">
+                                    <h4 style="color: var(--success); margin-bottom: 0.5rem;">
+                                        <i class="fas fa-check-circle"></i> Konfigurasi Lengkap
+                                    </h4>
+                                    <p style="margin: 0; font-size: 0.9rem; color: var(--neutral-700);">
+                                        Semua form telah dikonfigurasi dengan benar dan siap digunakan.
+                                    </p>
+                                </div>
+                            `}
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <button class="btn btn-outline" onclick="closeModal()">
+                                <i class="fas fa-times"></i> Tutup
+                            </button>
+                        </div>
+                    </div>
+                `;
+                
+                modal.classList.add('active');
+                
+                if (testResults.basic && testResults.tech) {
+                    showToast('Semua form terkonfigurasi dengan baik!', 'success');
+                } else {
+                    showToast('Beberapa form perlu dikonfigurasi.', 'warning');
+                }
+            }, 1500);
+        }
+        
+        function showSystemInfo() {
+            const modal = document.getElementById('examModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            
+            modalTitle.innerHTML = `
+                <i class="fas fa-server"></i>
+                Informasi Sistem
+            `;
+            
+            // Get system information
+            const systemInfo = {
+                userAgent: navigator.userAgent,
+                language: navigator.language,
+                platform: navigator.platform,
+                cookieEnabled: navigator.cookieEnabled,
+                onLine: navigator.onLine,
+                screenResolution: `${screen.width}x${screen.height}`,
+                viewportSize: `${window.innerWidth}x${window.innerHeight}`,
+                timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                localStorage: typeof(Storage) !== "undefined",
+                timestamp: new Date().toLocaleString('id-ID')
+            };
+            
+            modalBody.innerHTML = `
+                <div style="padding: 2rem; max-height: 70vh; overflow-y: auto;">
+                    <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Informasi Browser</h3>
+                        <div style="display: grid; gap: 1rem; font-size: 0.9rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--neutral-200);">
+                                <span style="font-weight: 500;">Browser:</span>
+                                <span style="color: var(--neutral-600);">${systemInfo.userAgent.split(' ')[0]}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--neutral-200);">
+                                <span style="font-weight: 500;">Platform:</span>
+                                <span style="color: var(--neutral-600);">${systemInfo.platform}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--neutral-200);">
+                                <span style="font-weight: 500;">Language:</span>
+                                <span style="color: var(--neutral-600);">${systemInfo.language}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--neutral-200);">
+                                <span style="font-weight: 500;">Screen Resolution:</span>
+                                <span style="color: var(--neutral-600);">${systemInfo.screenResolution}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--neutral-200);">
+                                <span style="font-weight: 500;">Viewport Size:</span>
+                                <span style="color: var(--neutral-600);">${systemInfo.viewportSize}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
+                                <span style="font-weight: 500;">Time Zone:</span>
+                                <span style="color: var(--neutral-600);">${systemInfo.timeZone}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Status Fitur</h3>
+                        <div style="display: grid; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; background: ${systemInfo.onLine ? 'var(--success)' : 'var(--error)'}20; border-radius: var(--border-radius-md);">
+                                <i class="fas fa-${systemInfo.onLine ? 'wifi' : 'wifi-slash'}" style="color: ${systemInfo.onLine ? 'var(--success)' : 'var(--error)'};"></i>
+                                <span style="font-weight: 500;">Internet Connection: ${systemInfo.onLine ? 'Online' : 'Offline'}</span>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; background: ${systemInfo.cookieEnabled ? 'var(--success)' : 'var(--error)'}20; border-radius: var(--border-radius-md);">
+                                <i class="fas fa-${systemInfo.cookieEnabled ? 'cookie-bite' : 'ban'}" style="color: ${systemInfo.cookieEnabled ? 'var(--success)' : 'var(--error)'};"></i>
+                                <span style="font-weight: 500;">Cookies: ${systemInfo.cookieEnabled ? 'Enabled' : 'Disabled'}</span>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; background: ${systemInfo.localStorage ? 'var(--success)' : 'var(--error)'}20; border-radius: var(--border-radius-md);">
+                                <i class="fas fa-${systemInfo.localStorage ? 'database' : 'ban'}" style="color: ${systemInfo.localStorage ? 'var(--success)' : 'var(--error)'};"></i>
+                                <span style="font-weight: 500;">Local Storage: ${systemInfo.localStorage ? 'Supported' : 'Not Supported'}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="professional-card" style="padding: 2rem;">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Konfigurasi Portal</h3>
+                        <div style="font-family: monospace; font-size: 0.8rem; background: var(--neutral-100); padding: 1rem; border-radius: var(--border-radius-md); overflow-x: auto;">
+                            Company: ${CONFIG.COMPANY_NAME}<br>
+                            Admin Email: ${CONFIG.ADMIN_EMAIL}<br>
+                            Support WhatsApp: ${CONFIG.SUPPORT_WHATSAPP}<br>
+                            Basic Duration: ${CONFIG.BASIC_DURATION} minutes<br>
+                            Tech Duration: ${CONFIG.TECH_DURATION} minutes<br>
+                            Basic Questions: ${CONFIG.BASIC_QUESTIONS}<br>
+                            Tech Questions: ${CONFIG.TECH_QUESTIONS}<br>
+                            Basic Passing: ${CONFIG.BASIC_PASSING}%<br>
+                            Tech Passing: ${CONFIG.TECH_PASSING}%<br>
+                            Generated: ${systemInfo.timestamp}
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button class="btn btn-outline" onclick="closeModal()">
+                            <i class="fas fa-times"></i> Tutup
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.add('active');
+        }
+        
+        function exportReports() {
+            const timestamp = new Date().toISOString().split('T')[0];
+            const reportData = `
+LAPORAN SISTEM PORTAL SERTIFIKASI DIGITAL
+=========================================
+Tanggal: ${new Date().toLocaleString('id-ID')}
+Company: ${CONFIG.COMPANY_NAME}
+Admin: ${CONFIG.ADMIN_EMAIL}
+
+KONFIGURASI SISTEM:
+- Basic Form URL: ${CONFIG.FORM_BASIC_URL}
+- Tech Form URL: ${CONFIG.FORM_TECH_URL}
+- Basic Duration: ${CONFIG.BASIC_DURATION} menit
+- Tech Duration: ${CONFIG.TECH_DURATION} menit
+- Basic Questions: ${CONFIG.BASIC_QUESTIONS}
+- Tech Questions: ${CONFIG.TECH_QUESTIONS}
+- Basic Passing Grade: ${CONFIG.BASIC_PASSING}%
+- Tech Passing Grade: ${CONFIG.TECH_PASSING}%
+
+STATUS FORM:
+- Basic Form: ${validateFormUrl(CONFIG.FORM_BASIC_URL) ? 'Configured' : 'Not Configured'}
+- Tech Form: ${validateFormUrl(CONFIG.FORM_TECH_URL) ? 'Configured' : 'Not Configured'}
+
+INFORMASI BROWSER:
+- User Agent: ${navigator.userAgent}
+- Platform: ${navigator.platform}
+- Language: ${navigator.language}
+- Screen: ${screen.width}x${screen.height}
+- Viewport: ${window.innerWidth}x${window.innerHeight}
+- Online: ${navigator.onLine ? 'Yes' : 'No'}
+- Cookies: ${navigator.cookieEnabled ? 'Enabled' : 'Disabled'}
+- Local Storage: ${typeof(Storage) !== "undefined" ? 'Supported' : 'Not Supported'}
+
+CONTACT INFO:
+- Support Email: ${CONFIG.ADMIN_EMAIL}
+- WhatsApp: ${CONFIG.SUPPORT_WHATSAPP}
+- Website: ${CONFIG.COMPANY_WEBSITE}
+            `.trim();
+            
+            // Create and download file
+            const blob = new Blob([reportData], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `portal_report_${timestamp}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+            
+            showToast('Laporan sistem berhasil diexport!', 'success');
+        }
+        
+        // ============= POLICY FUNCTIONS =============
+        function showPolicy(type) {
+            const policies = {
+                privacy: {
+                    title: 'Kebijakan Privasi',
+                    content: `
+                        <div style="padding: 2rem; max-height: 70vh; overflow-y: auto;">
+                            <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                                <h3 style="color: var(--primary-blue);">Kebijakan Privasi Portal Ujian Sertifikasi</h3>
+                                <p>Kami menghormati dan melindungi privasi pengguna portal sertifikasi digital.</p>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Data yang Dikumpulkan:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Informasi identitas peserta ujian (nama, email, nomor telepon)</li>
+                                    <li>Hasil ujian dan progress pembelajaran</li>
+                                    <li>Log aktivitas sistem untuk audit dan keamanan</li>
+                                    <li>Data teknis browser dan perangkat (untuk optimasi)</li>
+                                    <li>Riwayat komunikasi dengan tim support</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Penggunaan Data:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Proses sertifikasi dan penerbitan sertifikat</li>
+                                    <li>Komunikasi terkait ujian dan layanan</li>
+                                    <li>Peningkatan kualitas platform</li>
+                                    <li>Kepatuhan terhadap regulasi BNSP</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Keamanan Data:</h4>
+                                <p style="color: var(--neutral-600);">Data Anda dienkripsi dan disimpan dengan standar keamanan tinggi sesuai regulasi nasional dan internasional.</p>
+                            </div>
+                            
+                            <div style="text-align: center;">
+                                <button class="btn btn-primary" onclick="closeModal()">Tutup</button>
+                            </div>
+                        </div>
+                    `
+                },
+                terms: {
+                    title: 'Syarat & Ketentuan',
+                    content: `
+                        <div style="padding: 2rem; max-height: 70vh; overflow-y: auto;">
+                            <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                                <h3 style="color: var(--primary-blue);">Syarat & Ketentuan Penggunaan</h3>
+                                <p>Dengan menggunakan portal ini, Anda menyetujui syarat dan ketentuan berikut:</p>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Ketentuan Umum:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Portal ini khusus untuk ujian sertifikasi resmi BNSP bidang kecantikan</li>
+                                    <li>Peserta wajib memiliki akun valid dan terverifikasi</li>
+                                    <li>Dilarang keras melakukan kecurangan dalam bentuk apapun</li>
+                                    <li>Informasi yang diberikan harus akurat dan dapat dipertanggungjawabkan</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Aturan Ujian:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Ujian dilakukan secara online dengan pengawasan sistem</li>
+                                    <li>Waktu ujian terbatas sesuai level yang dipilih</li>
+                                    <li>Hasil ujian bersifat final dan tidak dapat diganggu gugat</li>
+                                    <li>Peserta yang terbukti curang akan didiskualifikasi</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Hak dan Kewajiban:</h4>
+                                <p style="color: var(--neutral-600);">Penyelenggara berhak mengubah ketentuan dengan pemberitahuan sebelumnya. Peserta wajib mematuhi semua aturan yang berlaku.</p>
+                            </div>
+                            
+                            <div style="text-align: center;">
+                                <button class="btn btn-primary" onclick="closeModal()">Tutup</button>
+                            </div>
+                        </div>
+                    `
+                },
+                exam: {
+                    title: 'Aturan Ujian',
+                    content: `
+                        <div style="padding: 2rem; max-height: 70vh; overflow-y: auto;">
+                            <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                                <h3 style="color: var(--primary-blue);">Aturan dan Tata Tertib Ujian</h3>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Persiapan Ujian:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Pastikan koneksi internet stabil minimum 2 Mbps</li>
+                                    <li>Gunakan browser terbaru yang kompatibel</li>
+                                    <li>Siapkan lingkungan yang tenang dan bebas gangguan</li>
+                                    <li>Pastikan perangkat memiliki daya battery mencukupi</li>
+                                    <li>Tutup semua aplikasi yang tidak diperlukan</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Selama Ujian:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Dilarang membuka tab/aplikasi lain</li>
+                                    <li>Tidak diperkenankan menggunakan bantuan orang lain</li>
+                                    <li>Dilarang menggunakan material referensi eksternal</li>
+                                    <li>Waktu ujian akan berjalan otomatis dan tidak dapat dihentikan</li>
+                                    <li>Sistem akan otomatis menyimpan jawaban setiap 30 detik</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Passing Grade & Penilaian:</h4>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                                    <div style="text-align: center; padding: 1rem; background: var(--primary-lighter); border-radius: var(--border-radius-md);">
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue);">70%</div>
+                                        <div style="color: var(--neutral-600); font-size: 0.9rem;">Level Basic</div>
+                                    </div>
+                                    <div style="text-align: center; padding: 1rem; background: var(--secondary-lighter); border-radius: var(--border-radius-md);">
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--secondary-gold);">75%</div>
+                                        <div style="color: var(--neutral-600); font-size: 0.9rem;">Level Technology</div>
+                                    </div>
+                                </div>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Sanksi Pelanggaran:</h4>
+                                <p style="color: var(--error); font-weight: 500;">Peserta yang melanggar aturan akan didiskualifikasi dan dikenakan sanksi sesuai ketentuan BNSP.</p>
+                            </div>
+                            
+                            <div style="text-align: center;">
+                                <button class="btn btn-primary" onclick="closeModal()">Tutup</button>
+                            </div>
+                        </div>
+                    `
+                },
+                refund: {
+                    title: 'Kebijakan Refund',
+                    content: `
+                        <div style="padding: 2rem; max-height: 70vh; overflow-y: auto;">
+                            <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                                <h3 style="color: var(--primary-blue);">Kebijakan Pengembalian Dana</h3>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Ketentuan Refund:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Permintaan refund hanya dapat diajukan maksimal 24 jam sebelum jadwal ujian</li>
+                                    <li>Refund akan diproses dalam 7-14 hari kerja setelah persetujuan</li>
+                                    <li>Biaya administrasi sebesar 10% akan dipotong dari total refund</li>
+                                    <li>Refund akan dikembalikan ke metode pembayaran yang sama</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Kondisi yang Tidak Dapat Direfund:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Ujian yang sudah dimulai atau telah selesai dikerjakan</li>
+                                    <li>Ketidakhadiran tanpa pemberitahuan sebelumnya</li>
+                                    <li>Masalah teknis dari sisi peserta (internet, perangkat, dll)</li>
+                                    <li>Permintaan refund setelah batas waktu yang ditentukan</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Cara Mengajukan Refund:</h4>
+                                <ol style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Hubungi customer service melalui email atau WhatsApp</li>
+                                    <li>Sertakan nomor registrasi dan alasan refund</li>
+                                    <li>Upload bukti pembayaran dan dokumen pendukung</li>
+                                    <li>Tunggu konfirmasi persetujuan dalam 2x24 jam</li>
+                                    <li>Refund akan diproses setelah verifikasi selesai</li>
+                                </ol>
+                            </div>
+                            
+                            <div style="text-align: center;">
+                                <button class="btn btn-primary" onclick="closeModal()">Tutup</button>
+                            </div>
+                        </div>
+                    `
+                },
+                training: {
+                    title: 'Program Pelatihan',
+                    content: `
+                        <div style="padding: 2rem; max-height: 70vh; overflow-y: auto;">
+                            <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                                <h3 style="color: var(--primary-blue);">Program Pelatihan & Persiapan Ujian</h3>
+                                <p>Ikuti program pelatihan komprehensif untuk mempersiapkan ujian sertifikasi dengan lebih baik.</p>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Paket Pelatihan Basic:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Modul pembelajaran dasar kecantikan (20 jam)</li>
+                                    <li>Video tutorial praktik salon (15 video)</li>
+                                    <li>Bank soal latihan (500+ soal)</li>
+                                    <li>Simulasi ujian online</li>
+                                    <li>Sertifikat kehadiran pelatihan</li>
+                                    <li>Konsultasi dengan instruktur berpengalaman</li>
+                                </ul>
+                                
+                                <h4 style="color: var(--neutral-800); margin-top: 2rem;">Paket Pelatihan Technology:</h4>
+                                <ul style="color: var(--neutral-600); line-height: 1.8;">
+                                    <li>Teknologi terkini dalam industri beauty (30 jam)</li>
+                                    <li>Hands-on training peralatan modern</li>
+                                    <li>Digital marketing untuk beauty business</li>
+                                    <li>Case study dan best practices</li>
+                                    <li>Networking session dengan profesional</li>
+                                    <li>Mentoring hingga lulus ujian</li>
+                                </ul>
+                                
+                                <div style="background: var(--info)20; padding: 1rem; border-radius: var(--border-radius-md); border-left: 4px solid var(--info); margin: 2rem 0;">
+                                    <h4 style="color: var(--info); margin-bottom: 0.5rem;">Info Pendaftaran</h4>
+                                    <p style="margin: 0; color: var(--neutral-700);">Hubungi tim kami untuk informasi jadwal, biaya, dan metode pembayaran program pelatihan.</p>
+                                </div>
+                            </div>
+                            
+                            <div style="text-align: center;">
+                                <button class="btn btn-primary" onclick="closeModal(); setTimeout(() => document.querySelector('#contact').scrollIntoView({behavior: 'smooth'}), 300);">
+                                    <i class="fas fa-phone"></i> Hubungi Kami
+                                </button>
+                                <button class="btn btn-outline" onclick="closeModal()" style="margin-left: 1rem;">Tutup</button>
+                            </div>
+                        </div>
+                    `
+                }
+            };
+            
+            const policy = policies[type];
+            if (!policy) {
+                showToast('Kebijakan tidak ditemukan.', 'error');
+                return;
+            }
+            
+            const modal = document.getElementById('examModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            
+            modalTitle.innerHTML = `
+                <i class="fas fa-file-contract"></i>
+                ${policy.title}
+            `;
+            modalBody.innerHTML = policy.content;
+            modal.classList.add('active');
+        }
+        
+        function showOfficeInfo() {
+            const modal = document.getElementById('examModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            
+            modalTitle.innerHTML = `
+                <i class="fas fa-map-marker-alt"></i>
+                Lokasi Kantor
+            `;
+            
+            modalBody.innerHTML = `
+                <div style="padding: 2rem;">
+                    <div class="professional-card" style="margin-bottom: 2rem; padding: 2rem;">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Alamat Kantor</h3>
+                        
+                        <div style="display: flex; align-items: start; gap: 1rem; margin-bottom: 2rem;">
+                            <div style="width: 60px; height: 60px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; flex-shrink: 0;">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--neutral-800); margin-bottom: 0.5rem;">DesieMissBeauty Headquarters</h4>
+                                <p style="color: var(--neutral-600); margin-bottom: 0.5rem; line-height: 1.6;">
+                                    Jl. Beauty Center No. 123<br>
+                                    Denpasar, Bali 80234<br>
+                                    Indonesia
+                                </p>
+                                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--neutral-500);">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Senin - Jumat: 08:00 - 17:00 WITA</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="background: var(--neutral-100); padding: 1.5rem; border-radius: var(--border-radius-md);">
+                            <h4 style="color: var(--neutral-800); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-info-circle"></i>
+                                Informasi Kunjungan
+                            </h4>
+                            <ul style="color: var(--neutral-600); line-height: 1.8; padding-left: 1.5rem;">
+                                <li>Kunjungan hanya dengan perjanjian terlebih dahulu</li>
+                                <li>Bawa dokumen identitas yang masih berlaku</li>
+                                <li>Untuk konsultasi teknis, siapkan pertanyaan tertulis</li>
+                                <li>Parkir tersedia gratis untuk pengunjung</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
+                            <a href="https://wa.me/6282128528895" target="_blank" class="btn btn-secondary" style="text-decoration: none;">
+                                <i class="fab fa-whatsapp"></i>
+                                Buat Janji via WA
+                            </a>
+                            <a href="mailto:desiputrisu@gmail.com" class="btn btn-outline" style="text-decoration: none;">
+                                <i class="fas fa-envelope"></i>
+                                Email untuk Janji
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button class="btn btn-outline" onclick="closeModal()">
+                            <i class="fas fa-times"></i> Tutup
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.add('active');
+        }
+        
+        // ============= EVENT LISTENERS & INITIALIZATION =============
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize timer display
+            const sampleTimer = document.getElementById('sampleTimer');
+            if (sampleTimer) {
+                sampleTimer.textContent = `${CONFIG.BASIC_DURATION}:00`;
+            }
+            
+            // Navigation link handlers
+            document.querySelectorAll('.nav-menu a, .mobile-nav-menu a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        smoothScrollTo(targetId);
+                        closeMobileMenu();
+                    }
+                });
+            });
+            
+            // Scroll spy for navigation
+            window.addEventListener('scroll', updateActiveNavLink);
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.mobile-menu') && !e.target.closest('.mobile-menu-toggle')) {
+                    closeMobileMenu();
+                }
+            });
+            
+            // Close admin panel when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.admin-panel') && isAdminPanelOpen) {
+                    toggleAdminPanel();
+                }
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                // Escape key to close modal
+                if (e.key === 'Escape') {
+                    if (currentModal) {
+                        closeModal();
+                    }
+                    if (isAdminPanelOpen) {
+                        toggleAdminPanel();
+                    }
+                    closeMobileMenu();
+                }
+                
+                // Admin panel shortcut (Ctrl/Cmd + Shift + A)
+                if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'A') {
+                    e.preventDefault();
+                    toggleAdminPanel();
+                }
+            });
+            
+            // Modal click outside to close
+            document.getElementById('examModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+            
+            // Window resize handler
+            window.addEventListener('resize', function() {
+                // Close mobile menu on desktop
+                if (window.innerWidth > 1024) {
+                    closeMobileMenu();
+                }
+            });
+            
+            // Connection status monitoring
+            window.addEventListener('online', function() {
+                showToast('Koneksi internet tersambung kembali', 'success');
+            });
+            
+            window.addEventListener('offline', function() {
+                showToast('Koneksi internet terputus. Periksa koneksi Anda.', 'warning', 5000);
+            });
+            
+            // Form validation and auto-configuration check
+            setTimeout(() => {
+                const basicConfigured = validateFormUrl(CONFIG.FORM_BASIC_URL);
+                const techConfigured = validateFormUrl(CONFIG.FORM_TECH_URL);
+                
+                if (!basicConfigured || !techConfigured) {
+                    console.warn('⚠️ Beberapa form belum dikonfigurasi. Gunakan Admin Panel untuk setup.');
+                }
+                
+                console.log('✅ Portal Ujian Sertifikasi Digital berhasil dimuat!');
+                console.log('📊 Konfigurasi:', {
+                    company: CONFIG.COMPANY_NAME,
+                    basicForm: basicConfigured ? '✅' : '❌ Perlu konfigurasi',
+                    techForm: techConfigured ? '✅' : '❌ Perlu konfigurasi',
+                    adminEmail: CONFIG.ADMIN_EMAIL,
+                    whatsapp: CONFIG.SUPPORT_WHATSAPP
+                });
+            }, 1000);
+            
+            // Analytics and user experience tracking
+            trackPageView();
+        });
+        
+        // ============= ANALYTICS & TRACKING =============
+        function trackPageView() {
+            // Simple page view tracking without external dependencies
+            const pageData = {
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent,
+                referrer: document.referrer,
+                language: navigator.language,
+                screenResolution: `${screen.width}x${screen.height}`,
+                viewportSize: `${window.innerWidth}x${window.innerHeight}`,
+                page: 'portal-home'
+            };
+            
+            // Store in localStorage for admin analysis (optional)
+            try {
+                const visits = JSON.parse(localStorage.getItem('portal_visits') || '[]');
+                visits.push(pageData);
+                if (visits.length > 100) visits.shift(); // Keep only last 100 visits
+                localStorage.setItem('portal_visits', JSON.stringify(visits));
+            } catch (error) {
+                console.log('Analytics tracking disabled - localStorage not available');
+            }
+        }
+        
+        function trackExamStart(level) {
+            console.log(`🎯 Ujian ${level} dimulai:`, {
+                level: level,
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent
+            });
+        }
+        
+        // Add exam tracking to start functions
+        const originalStartExam = startExam;
+        startExam = function(level) {
+            trackExamStart(level);
+            return originalStartExam.call(this, level);
+        };
+        
+        // ============= UTILITY HELPER FUNCTIONS =============
+        function formatDuration(minutes) {
+            const hours = Math.floor(minutes / 60);
+            const mins = minutes % 60;
+            if (hours > 0) {
+                return `${hours}j ${mins}m`;
+            }
+            return `${mins} menit`;
+        }
+        
+        function generateId() {
+            return Math.random().toString(36).substr(2, 9);
+        }
+        
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+        
+        // Performance optimization
+        const debouncedResize = debounce(() => {
+            // Handle resize events efficiently
+            updateActiveNavLink();
+        }, 250);
+        
+        window.addEventListener('resize', debouncedResize);
+        
+        // Service Worker registration for offline support (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+        
+        console.log('🌟 Portal Sertifikasi Digital v2.0 - Ready!');
+    </script>
+</body>
+</html>
